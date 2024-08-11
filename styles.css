@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgba(187, 153, 129, 0.9), rgba(187, 153, 129, 0.9)), url('https://png.pngtree.com/thumb_back/fw800/background/20240204/pngtree-happy-valentines-day-rose-gold-background-image_15607833.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #534340;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(83, 67, 64, 0.8);
+    padding: 10px;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f4fcd9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    color: #c5d8a4;
+    text-align: center;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px #a396e3, 0 0 25px rgba(251, 251, 251, 0.8);
+}
+
+.contenido {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px 0;
+}
+
+.contenido .texto {
+    width: 40%;
+    background-color: rgba(83, 67, 64, 0.8);
+    padding: 20px;
+    color: #f4fcd9;
+    border-radius: 10px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.contenido .imagen {
+    width: 30%;
+}
+
+.contenido .imagen img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.inverso {
+    flex-direction: row-reverse;
+}
+
+.inverso .texto {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+footer {
+    background-color: rgba(83, 67, 64, 0.8);
+    color: #f4fcd9;
+    text-align: center;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+footer a {
+    color: #c5d8a4;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.texto:hover, .imagen img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.carousel {
+    position: relative;
+    width: 30%;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: rgba(83, 67, 64, 0.8); /* Fondo café transparente */
+    padding: 10px; /* Espacio alrededor del carrusel */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Sombra para destacar el contenedor */
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
